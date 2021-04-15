@@ -1,0 +1,8 @@
+{
+  "realm": "terrascope",
+  "bearer-only": true,
+  "auth-server-url": "https://sso.vgt.vito.be/auth/",
+  "ssl-required": "external",
+  "resource": "api-gateway",
+  "confidential-port": 0
+}
