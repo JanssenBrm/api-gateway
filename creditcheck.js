@@ -12,7 +12,6 @@ const checkCredit = () => {
 const setupCreditCheck = (app, routes) => {
     routes.forEach(r => {
         if (r.creditCheck) {
-            console.log("SETTING UP CREDIT CHECK", r.url);
             app.use(r.url, function(req, res, next) {
                 checkCredit().then(() => {
                     next();

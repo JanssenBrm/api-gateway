@@ -19,6 +19,7 @@
   "homepage": "https://github.com/JanssenBrm/api-gateway#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "express-rate-limit": "^5.2.6",
     "express-session": "^1.17.1",
     "http-proxy-middleware": "^1.1.2",
     "keycloak-connect": "^12.0.4",

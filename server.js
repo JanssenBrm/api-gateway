@@ -1,5 +1,6 @@
 const express = require('express')
 const morgan = require("morgan");
+const {setupRateLimit} = require("./ratelimit");
 const {setupCreditCheck} = require("./creditcheck");
 const {ROUTES} = require("./routes");
 const {setupProxies} = require("./proxy");
@@ -11,6 +12,7 @@ const port = 3000;
 
 app.use(morgan('combined'));
 
+setupRateLimit(app, ROUTES);
 setupAuth(app, ROUTES);
 setupCreditCheck(app, ROUTES);
 setupProxies(app, ROUTES);
