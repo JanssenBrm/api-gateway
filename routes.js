@@ -16,14 +16,14 @@ const ROUTES = [
         }
     },
     {
-        url: '/paid',
+        url: '/premium',
         auth: true,
         creditCheck: true,
         proxy: {
             target: "https://www.google.com",
             changeOrigin: true,
             pathRewrite: {
-                [`^/paid`]: '',
+                [`^/premium`]: '',
             },
         }
     }
