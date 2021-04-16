@@ -1,6 +1,3 @@
-const { createProxyMiddleware } = require('http-proxy-middleware');
-
-
 const checkCredit = (auth) => {
     return new Promise((resolve, reject) => {
         console.log("Checking credit with token", auth);
