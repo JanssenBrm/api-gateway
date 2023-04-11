@@ -1,0 +1,3 @@
+[submodule "microman"]
+	path = microman
+	url = git@github.com:swetank01/microman.git
